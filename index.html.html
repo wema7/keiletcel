@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabéns Keilinha</title>
+    <style>
+        body {
+            background: radial-gradient(circle, #E75480, #9B50A1, #DAA520);
+            padding: 8px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            animation: baloes 5s infinite alternate;
+        }
+
+        .container {
+            text-align: center;
+            color: #333;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #fff;
+            background: linear-gradient(to right, #FF69B4, #FFD700);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out, festaTitulo 2s infinite alternate;
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: #fff;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .paragrafo, .paragrafoo, .fim {
+            text-align: center;
+            margin: 0 auto;
+            max-width: 80%; /* Ajuste conforme necessário */
+            animation: festaParagrafo 2s infinite alternate;
+        }
+
+        .section {
+            opacity: 0;
+            transition: opacity 1s ease;
+            width: 80%;
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .section.show {
+            opacity: 1;
+        }
+
+        .text {
+            flex: 1;
+            text-align: left;
+            margin-right: 20px;
+        }
+
+        .image {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+            text-align: right;
+        }
+
+        .image.left {
+            text-align: left;
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+            max-width: 100%; /* Ajuste conforme necessário */
+            max-height: 100%; /* Ajuste conforme necessário */
+            border-radius: 8px;
+            object-fit: contain;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .image.left img {
+            text-align: left;
+        }
+
+        .image:hover img {
+            box-shadow: none;
+        }
+
+        .section:nth-child(even) .text {
+            text-align: right;
+            margin-right: 0;
+            margin-left: 20px;
+        }
+
+        @keyframes festaParagrafo {
+            0%, 100% {
+                color: #fff;
+            }
+            50% {
+                color: #FFD700;
+            }
+        }
+
+        @keyframes festaTitulo {
+            0%, 100% {
+                background: linear-gradient(to right, #FF69B4, #FFD700);
+                color: #fff;
+            }
+            50% {
+                background: linear-gradient(to right, #FFD700, #FF69B4);
+                color: #000;
+            }
+        }
+
+        @keyframes baloes {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="parabens">🎉 PARABÉNS KEILINHA 🎉</h1>
+    </div>
+    <div class="paragrafo">
+        <p>A lindona está fazendo aniversário, e como você foi e é muito importante para mim, sempre vou deixar recadinhos carinhosos</p>
+        <p>O dia 15 de dezembro tornou-se uma data especial, pois nele nasceu e comemora o seu aniversário. Esta data seguirá em minha memória e farei questão de dar felicitações por muitos anos<hr>  
+        </p>
+        <h3> É satisfatório te desejar coisas boas, pois sua felicidade também é a minha</h3>
+    </div>
+
+    <div class="section" id="section1">
+        <div class="image left"><img src="img/k2.jpg" alt="Imagem 1"></div>
+        <div class="text">
+             <h2>16/05/2021</h2>
+            <p>Eu não esperava que a Ponte Rio-Niterói fosse tirar de você um dos áudios que eu mais ouvi na vida. Eu ouvi a sua risada tantas vezes, mas tantas vezes, que não consigo sequer estimar 
+                um número.</p> <p> QUE RISADA GOSTOSA</p>
+        </div>
+    </div>
+
+    <div class="section" id="section2">
+        <div class="text">
+            <h2>13/07/2021</h2>
+            <p> Essa foi a primeira vez que você me deixou em choque, em choque mesmo. Estava no trabalho, num sol, no lugar que eu mais odiava (estacionamento do fasano). Mas tudo desapareceu, suava frio, em desespero mandava mensagem pro apu, que era o único que eu falava sobre você. Tinha tanto medo, nunca fui muito sociável, mas era você, eu precisava ir. 
+            </p>
+            <p>Lembro que ao chegar em casa, eu estava tão contente, tão feliz, tão preenchido. Obrigado!</p>
+        </div>
+        <div class="image"><img src="img/k1.jpg" alt="Imagem 2"></div>
+    </div>
+
+    <div class="section" id="section3">
+        <div class="image left"><img src="img/k3.jpg" alt="Imagem 3"></div>
+        <div class="text">
+            <h2>01/02/20222</h2>
+            <p>Que tal sair para lanchar, lambuzar a manga da blusa e no frade perder a sola do tênis? Por que as coisas simples com você eram tão boas?</p>
+        </div>
+        <div width="238px" height="323px"><video src="img/k3video.mp4" width="300" height="600" controls></video></div>
+    </div>
+
+    <div class="section" id="section4">
+        <div class="text">
+            <h2>18/04/2022</h2>
+            <p>Este é o sorriso que te representa. Honesto, bonito, radiante. Seus defeitos desaparecem diante suas qualidades, você é linda, forte, e muito divertida. Ter você por perto é estar completo, é vislumbrar tudo que precisa.</p>
+        </div>
+        <div class="image"><img src="img/k4.jpg" alt="Imagem 4"></div>
+    </div>
+
+    <div class="paragrafoo">
+        <h2> Keila Nascimento Seixas. Desejo a você um feliz aniversário, que você seja verdadeiramente feliz. Quero que conquiste tudo, o mundo. </h2>
+        <h2> Torcerei por você sempre, você é incrível, conte comigo sempre que precisar. Amo você, se cuida. BEIJOS </h2>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var titulo = document.getElementById("parabens");
+            titulo.style.opacity = 1;
+
+            var sections = document.querySelectorAll(".section");
+
+            window.addEventListener("scroll", function () {
+                var scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+                sections.forEach(function (section, index) {
+                    var isVisible = scrollTop > section.offsetTop - window.innerHeight / 2;
+
+                    if (isVisible) {
+                        section.classList.add("show");
+                    } else {
+                        section.classList.remove("show");
+                    }
+                });
+
+                var lastVisibleSection;
+                sections.forEach(function (section) {
+                    if (section.classList.contains("show")) {
+                        lastVisibleSection = section;
+                    }
+                });
+
+                var indexOfLastVisibleSection = Array.from(sections).indexOf(lastVisibleSection);
+                for (var i = 0; i < indexOfLastVisibleSection; i++) {
+                    sections[i].classList.remove("show");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
